@@ -4,6 +4,7 @@ const fs = require('fs');
 
 const client = new Discord.Client();
 client.config = require('./config.json');
+client.token = require('./token/access.json');
 
 client.commands = new Enmap({ name: 'commands' });
 client.profiles = new Enmap({ name: 'profiles' });
@@ -54,4 +55,4 @@ fs.readdir("./commands/", (err, files) => {
     });
 });
 
-client.login(client.config.token);
+client.login(client.token);
