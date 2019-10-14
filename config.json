@@ -1,0 +1,130 @@
+﻿{
+	"token": "NjAxMTIyMzAxODQ4NTg0MjAy.XS9s_g.YE3oE8UEGXtanjhv4Is6s19wVrU",
+  "prefix": ";",
+  "rank": [
+    {
+      "name": "Pas de Rang",
+      "img": null
+    },
+    {
+      "name": "Initié",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/4/4e/Initiate.jpg/revision/latest?cb=20141006163931&path-prefix=fr"
+    },
+    {
+      "name": "Initié d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/a/a4/Silver-initiate.jpg/revision/latest?cb=20141006164156&path-prefix=fr"
+    },
+    {
+      "name": "Initié d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/8/8f/Gold-initiate.jpg/revision/latest?cb=20141006163713&path-prefix=fr"
+    },
+    {
+      "name": "Novice",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/9/91/Novice.jpg/revision/latest?cb=20141006164220&path-prefix=fr"
+    },
+    {
+      "name": "Novice d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/9/99/Silver-novice.jpg/revision/latest?cb=20141006164318&path-prefix=fr"
+    },
+    {
+      "name": "Novice d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/6/69/Gold-novice.jpg/revision/latest?cb=20141006163742&path-prefix=fr"
+    },
+    {
+      "name": "Disciple",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/9/92/Disciple.jpg/revision/latest?cb=20141006163413&path-prefix=fr"
+    },
+    {
+      "name": "Disciple d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/f/f8/Silver-disciple.jpg/revision/latest?cb=20141006164050&path-prefix=fr"
+    },
+    {
+      "name": "Disciple d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/8/84/Gold-disciple.jpg/revision/latest?cb=20141006163448&path-prefix=fr"
+    },
+    {
+      "name": "Chercheur",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/4/4b/Seeker.jpg/revision/latest?cb=20141006164105&path-prefix=fr"
+    },
+    {
+      "name": "Chercheur d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/0/0e/Silver-seeker.jpg/revision/latest?cb=20141006164249&path-prefix=fr"
+    },
+    {
+      "name": "Chercheur d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/b/b9/Gold-seeker.jpg/revision/latest?cb=20141006163807&path-prefix=fr"
+    },
+    {
+      "name": "Chasseur",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/2/2a/Hunter.jpg/revision/latest?cb=20141006163914&path-prefix=fr"
+    },
+    {
+      "name": "Chasseur d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/1/19/Silver-hunter.jpg/revision/latest?cb=20141006164146&path-prefix=fr"
+    },
+    {
+      "name": "Chasseur d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/7/75/Gold-hunter.jpg/revision/latest?cb=20141006163700&path-prefix=fr"
+    },
+    {
+      "name": "Aigle",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/0/0b/Eagle.jpg/revision/latest?cb=20141006163436&path-prefix=fr"
+    },
+    {
+      "name": "Aigle d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/c/c3/Silver-eagle.jpg/revision/latest?cb=20141006164127&path-prefix=fr"
+    },
+    {
+      "name": "Aigle d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/a/af/Gold-eagle.jpg/revision/latest?cb=20141006163636&path-prefix=fr"
+    },
+    {
+      "name": "Tigre",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/0/05/Tiger.jpg/revision/latest?cb=20141006164022&path-prefix=fr"
+    },
+    {
+      "name": "Tigre d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/d/d2/Silver-tiger.jpg/revision/latest?cb=20141006164229&path-prefix=fr"
+    },
+    {
+      "name": "Tigre d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/7/7e/Gold-tiger.jpg/revision/latest?cb=20141006163842&path-prefix=fr"
+    },
+    {
+      "name": "Dragon",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/b/bb/Dragon.jpg/revision/latest?cb=20141006163426&path-prefix=fr"
+    },
+    {
+      "name": "Dragon d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/3/3c/Silver-dragon.jpg/revision/latest?cb=20141006164115&path-prefix=fr"
+    },
+    {
+      "name": "Dragon d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/8/83/Gold-dragon.jpg/revision/latest?cb=20141006163615&path-prefix=fr"
+    },
+    {
+      "name": "Sage",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/7/70/Sage.jpg/revision/latest?cb=20141006164009&path-prefix=fr"
+    },
+    {
+      "name": "Sage d'Argent",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/b/b0/Silver-sage.jpg/revision/latest?cb=20141006164307&path-prefix=fr"
+    },
+    {
+      "name": "Sage d'Or",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/2/29/Gold-sage.jpg/revision/latest?cb=20141006163756&path-prefix=fr"
+    },
+    {
+      "name": "Maître",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/7/7d/Master.jpg/revision/latest?cb=20141006163950&path-prefix=fr"
+    },
+    {
+      "name": "Maître Moyen",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/f/f8/Middle-master.jpg/revision/latest?cb=20141006164518&path-prefix=fr"
+    },
+    {
+      "name": "Grand Maître",
+      "img": "https://vignette.wikia.nocookie.net/warframe/images/4/4d/Grand-master.jpg/revision/latest?cb=20141006163853&path-prefix=fr"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "cephalon-prometheus",
+  "version": "1.0.0",
+  "description": "Discord bot for a Warframe clan server purposes only.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrissdroid/Cephalon-Prometheus.git"
+  },
+  "author": "ΛsтroΛlex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrissdroid/Cephalon-Prometheus/issues"
+  },
+  "homepage": "https://github.com/Chrissdroid/Cephalon-Prometheus#readme",
+  "dependencies": {
+    "better-sqlite-pool": "^0.2.2",
+    "discord.js": "^11.5.1",
+    "enmap": "^5.2.0",
+    "fs": "0.0.1-security"
+  }
+}
