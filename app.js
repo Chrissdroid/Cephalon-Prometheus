@@ -26,6 +26,7 @@ client.settings = new Enmap({
 client.profile = (id) => {
     if (typeof id === 'undefined') return;
     const defaultProfile = {
+        user: id,
         points: 0,
         rank: 0,
         credits: 150

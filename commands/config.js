@@ -5,7 +5,7 @@
     const set = value[0];
     const target = typeof prop !== 'undefined' ? prop.toLowerCase() : null;
 
-    if (message.author.id === client.config.ownerID || (adminRole && message.member.roles.has(adminRole.id))) {
+    if (message.author.id === client.config.ownerID || adminRole && message.member.roles.has(adminRole.id)) {
         switch (target) {
             case "adminrole":
                 if (message.author.id !== client.config.ownerID) return message.reply("You're not the owner of this guild, sorry!");

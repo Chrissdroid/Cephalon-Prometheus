@@ -14,7 +14,7 @@ module.exports = async (client, event) => {
     const message = await channel.fetchMessage(data.message_id);
     const member = message.guild.members.get(user.id);
 
-    const poll = client.polls.get(message.author.id);
+    const poll = client.polls.find(p => p.id === data.message_id);
 
     const emojiKey = data.emoji.id ? `${data.emoji.name}:${data.emoji.id}` : data.emoji.name;
     let reaction = message.reactions.get(emojiKey);
@@ -38,20 +38,26 @@ module.exports = async (client, event) => {
             }
         }
     }
-    else if (poll && poll.id === message.id && (data.emoji.name === "✅" || data.emoji.name === "⛔")) {
+    else if (typeof poll !== 'undefined' && poll.id === message.id && (data.emoji.name === "✅" || data.emoji.name === "⛔")) {
 
         if (data.emoji.name === "✅") {
             if (event.t === "MESSAGE_REACTION_ADD") {
-                client.polls.inc(message.author.id, 'plus');
+                client.polls.inc(poll.author, 'plus');
             } else {
-                client.polls.dec(message.author.id, 'plus');
+                if (poll.plus !== 0) {
+                    if (poll.plus < 0) client.polls.set(poll.author, 'plus', 0);
+                    else client.polls.dec(poll.author, 'plus');
+                }
             }
         }
         else {
             if (event.t === "MESSAGE_REACTION_ADD") {
-                client.polls.inc(message.author.id, 'minus');
+                client.polls.inc(poll.author, 'minus');
             } else {
-                client.polls.dec(message.author.id, 'minus');
+                if (poll.minus !== 0) {
+                    if (poll.minus < 0) client.polls.set(poll.author, 'minus', 0);
+                    else client.polls.dec(poll.author, 'minus');
+                }
             }
         }
     }

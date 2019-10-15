@@ -42,7 +42,7 @@
                 },
                 {
                     "name": "__**Palier actuel** :__",
-                    "value": `${userinfo.rank}${paliemoji} (${userinfo.points} points)`,
+                    "value": `**${client.config.rank[userinfo.rank].name}** ( ${userinfo.rank}${paliemoji} - ${userinfo.points}points )`,
                     "inline": true
                 },
                 {

@@ -2,7 +2,7 @@
 
 exports.run = (client, message, [nbt, ...args]) => {
     if (!isNaN(nbt) || nbt > 30) return;
-    paliemoji = client.emojis.find(emoji => emoji.name === "Tenno");
+    let paliemoji = client.emojis.find(emoji => emoji.name === "Tenno");
     const lvlembed = new Discord.RichEmbed()
         .setTitle(`${message.author.username} - **${nbt}**${paliemoji}`)
         .setDescription(`Vous avez obtenu le rang de maîtrise **${client.config.rank[nbt].name}**, bien joué !`)
