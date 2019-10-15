@@ -5,7 +5,7 @@ getRandomInteger = (min = 0, max = 20) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
-}
+};
 
 module.exports = async (client, message) => {
     if (!message.guild || message.author.bot) return;

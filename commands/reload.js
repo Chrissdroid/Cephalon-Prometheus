@@ -1,24 +1,24 @@
-exports.run = (client, message, args) => {
-	if(message.author.id !== client.config.ownerID) return;
+﻿exports.run = (client, message, args) => {
+    if (message.author.id !== client.config.ownerID) return;
 
-	if(!args || args.length < 1) return message.reply("Must provide a command name to reload.");
-	const commandName = args[0];
+    if (!args || args.length < 1) return message.reply("Vous devez préciser le nom de la commande.");
+    const commandName = args[0];
 
-	if(!client.commands.has(commandName)) {
-		return message.reply("That command does not exist");
-	}
+    if (!client.commands.has(commandName)) {
+        return message.reply("Cette commande n'existe pas");
+    }
 
-	delete require.cache[require.resolve(`./${commandName}.js`)];
+    delete require.cache[require.resolve(`./${commandName}.js`)];
 
-	client.commands.delete(commandName);
-	const props = require(`./${commandName}.js`);
-	client.commands.set(commandName, props);
-	message.reply(`The command ${commandName} has been reloaded`);
-}
+    client.commands.delete(commandName);
+    const props = require(`./${commandName}.js`);
+    client.commands.set(commandName, props);
+    message.reply(`La commande ${commandName} a été rechargée !`);
+};
 
 exports.info = {
-	name: "Reload",
-	desc: "Reload a command !",
-	usage: "PatReload command",
-	type: 4
-}
+    name: "Reload",
+    desc: "Recharge une commande !",
+    usage: ";Reload commandName",
+    type: 4
+};

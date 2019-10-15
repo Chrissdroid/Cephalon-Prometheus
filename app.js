@@ -8,6 +8,7 @@ client.token = require('./token/access.json');
 
 client.commands = new Enmap({ name: 'commands' });
 client.profiles = new Enmap({ name: 'profiles' });
+client.polls = new Enmap({ name: 'polls' });
 client.awaitcmd = new Enmap({
     name: 'awaitcmd',
     fetchAll: false,
@@ -27,7 +28,7 @@ client.profile = (id) => {
     const defaultProfile = {
         points: 0,
         rank: 0,
-        coins: 150
+        credits: 150
     };
 
     const active = client.profiles.ensure(id, defaultProfile);
@@ -55,4 +56,4 @@ fs.readdir("./commands/", (err, files) => {
     });
 });
 
-client.login(client.token);
+client.login(client.token.token);

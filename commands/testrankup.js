@@ -1,6 +1,7 @@
 ﻿const Discord = require('discord.js');
 
 exports.run = (client, message, [nbt, ...args]) => {
+    if (!isNaN(nbt) || nbt > 30) return;
     paliemoji = client.emojis.find(emoji => emoji.name === "Tenno");
     const lvlembed = new Discord.RichEmbed()
         .setTitle(`${message.author.username} - **${nbt}**${paliemoji}`)
