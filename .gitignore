@@ -333,4 +333,4 @@ ASALocalRun/
 .mfractor/
 
 # CircleCI
-.circleci
+.circleci/
