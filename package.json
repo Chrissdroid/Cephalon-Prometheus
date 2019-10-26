@@ -19,7 +19,7 @@
   "dependencies": {
     "better-sqlite-pool": "^0.2.2",
     "discord.js": "^11.5.1",
-    "enmap": "^5.2.0",
+    "enmap": "^5.2.1",
     "fs": "0.0.1-security"
   }
 }

@@ -228,7 +228,7 @@ client.on("message", async message => {
             user = args[0];
             if (!user) return message.reply("You must mention someone or give their ID!");
 
-            client.unsetScore.run(user)
+            client.unsetScore.run(user);
 
             message.channel.send(`${user} été supprimé.`);
             break;
