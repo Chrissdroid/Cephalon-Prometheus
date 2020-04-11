@@ -66,13 +66,13 @@ exports.run = (client, message, args) => {
             const polls = client.polls.array().splice(0, 20);
 
             if (polls.length) {
-                const embed = new Discord.RichEmbed()
+                const embed = new Discord.MessageEmbed()
                     .setTitle("Polls en cours sur le serveur...")
                     .setAuthor(client.user.username, client.user.avatarURL)
                     .setColor(0x00AE86);
 
                 for (const data of polls) {
-                    embed.addField(data.question, `	${data.plus} pour, ${data.minus} contre. Créé par ${client.users.get(data.author).tag}`);
+                    embed.addField(data.question, `	${data.plus} pour, ${data.minus} contre. Créé par ${client.users.cache.get(data.author)}`);
                 }
 
                 return message.channel.send({ embed });

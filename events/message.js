@@ -39,12 +39,16 @@ module.exports = async (client, message) => {
         }
         if (OneUP) {
             client.profiles.set(key, curLevel, "rank");
-            paliemoji = client.emojis.find(emoji => emoji.name === "Tenno");
+            paliemoji = client.emojis.cache.find(emoji => emoji.name === "Tenno");
             if (curLevel <= 30) {
-                const lvlembed = new Discord.RichEmbed()
+                const lvlembed = new Discord.MessageEmbed()
                     .setTitle(`${message.author.username} - **${curLevel}**${paliemoji}`)
                     .setDescription(`Vous avez obtenu le rang de maîtrise **${client.config.rank[curLevel].name}**, bien joué !`)
-                    .setAuthor(`Montée de maitrise`, message.author.displayAvatarURL)
+                    .setAuthor(`Montée de maitrise`, message.author.displayAvatarURL({
+                        format: 'png',
+                        dynamic: true,
+                        size: 128
+                    }))
                     .setThumbnail(client.config.rank[curLevel].img)
                     .setColor(3514045);
                 message.channel.send({ embed: lvlembed });
